@@ -81,3 +81,26 @@ Une faute de frappe dans l’attribut `id` du bouton empêchait le JavaScript de
 - Étendre les compétences de debugging à plusieurs langages du Web
 
 ---
+
+## 📁 Script 4 : `minesweeper.py`
+
+### 🔍 Problème initial
+
+Le jeu fonctionnait partiellement, mais plusieurs erreurs logiques empêchaient une expérience correcte :
+- Les coordonnées des mines étaient mal indexées (mauvais calcul des positions).
+- Aucune vérification des entrées : le joueur pouvait faire planter le programme en sortant du plateau.
+- Aucune détection de victoire : le jeu ne se terminait que si une mine était déclenchée.
+
+### ✅ Corrections apportées
+
+- Correction de la formule d’index `(y * width + x)` dans tout le code.
+- Ajout d’un contrôle sur les coordonnées entrées par l’utilisateur.
+- Ajout d’une méthode `is_victory()` pour détecter la fin de partie réussie.
+- Maintien de l’affichage clair et du fonctionnement récursif sur les cases vides.
+
+### 🧠 Remarque personnelle
+
+Ce script utilise de la programmation orientée objet et de la manipulation d’index 2D avancée.  
+Il sera commenté plus tard lorsque la formation m’aura permis de mieux maîtriser ces notions.
+
+---
