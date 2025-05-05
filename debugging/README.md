@@ -1,6 +1,6 @@
-# 🧪 Exercices de débogage Python
+# 🧪 Exercices de débogage Python, HTML & JavaScript
 
-Ce dossier contient des scripts corrigés dans le cadre du projet **"Enhancing Code Quality and Efficiency with ChatGPT"**, visant à améliorer la robustesse, la lisibilité et l'efficacité du code Python.
+Ce dossier contient des scripts corrigés dans le cadre du projet **"Enhancing Code Quality and Efficiency with ChatGPT"**, visant à améliorer la robustesse, la lisibilité et l'efficacité du code dans plusieurs langages (Python, HTML, JavaScript).
 
 ---
 
@@ -29,7 +29,7 @@ $ python factorial.py 5
 
 ---
 
-## 📁 Script 2 : `print_arguments.py`
+## 📁 Script 2 : `print_args.py`
 
 ### 🔍 Problème initial
 
@@ -46,7 +46,7 @@ Il n’y avait pas non plus de vérification en cas d'absence d'arguments.
 ### 🧪 Exemple d’utilisation
 
 ```bash
-$ python print_arguments.py hello world
+$ python print_args.py hello world
 Arguments fournis :
 hello
 world
@@ -54,11 +54,30 @@ world
 
 ---
 
+## 📁 Script 3 : `change_background.html`
+
+### 🔍 Problème initial
+
+Une faute de frappe dans l’attribut `id` du bouton empêchait le JavaScript de fonctionner (`colorButon` au lieu de `colorButton`).
+
+### ✅ Corrections apportées
+
+- Correction du nom d’`id` dans le bouton HTML (`colorButton`)
+- Aucun besoin de déplacer le script, il était déjà placé après le DOM
+- Conservation d’un JavaScript simple et lisible
+
+### 🧪 Fonctionnement
+
+- Lorsqu’on clique sur le bouton, une couleur aléatoire est générée et appliquée à l’arrière-plan du document.
+- Fonctionne dans tous les navigateurs modernes.
+
+---
+
 ## 📚 Objectif pédagogique
 
-- Identifier les erreurs classiques liées à `sys.argv`
-- Travailler sur les bonnes pratiques de contrôle des entrées utilisateur
-- Structurer son code avec des conditions, des boucles, et des messages clairs
-- Appliquer des standards professionnels dans des scripts simples
+- Identifier rapidement les fautes de frappe classiques en HTML/JS
+- S’assurer que le DOM est prêt avant exécution d’un script
+- Travailler sur la logique événementielle simple
+- Étendre les compétences de debugging à plusieurs langages du Web
 
 ---
