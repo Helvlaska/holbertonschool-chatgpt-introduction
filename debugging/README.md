@@ -104,3 +104,31 @@ Ce script utilise de la programmation orientée objet et de la manipulation d’
 Il sera commenté plus tard lorsque la formation m’aura permis de mieux maîtriser ces notions.
 
 ---
+
+## 📁 Script 5 : `factorial_recursive.py`
+
+### 🔍 Problème initial
+
+Le script calcule bien la factorielle d’un entier en mode récursif, mais il manquait plusieurs sécurités :
+- Pas de vérification de l’argument (crash si rien n’est passé)
+- Pas de gestion des entrées invalides (texte ou négatif)
+- Aucune aide utilisateur ni message clair
+
+### ✅ Corrections apportées
+
+- Ajout d’une vérification du nombre d’arguments
+- Conversion en entier protégée par `try/except`
+- Rejet des entiers négatifs avec message explicite
+- Affichage clair d’un message d’usage si mal utilisé
+- Fonction récursive conservée sans modification de logique
+
+### 🧪 Exemple d’utilisation
+
+```bash
+$ python factorial_recursive.py 4
+24
+```
+
+---
+
+
