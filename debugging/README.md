@@ -131,4 +131,34 @@ $ python factorial_recursive.py 4
 
 ---
 
+## 📁 Script 6 : `checkbook.py`
+
+### 🔍 Problème initial
+
+Le script permettait d’effectuer des dépôts, des retraits et de consulter un solde, mais il contenait plusieurs failles :
+- Aucune gestion d’erreur sur la saisie utilisateur → crash si texte au lieu d’un montant
+- Possibilité de déposer ou retirer des montants négatifs
+- Pas de tolérance sur les espaces ou majuscules dans les commandes
+
+### ✅ Corrections apportées
+
+- Entourer les saisies numériques avec un `try/except` pour éviter les `ValueError`
+- Rejeter les montants ≤ 0 dans les méthodes `deposit()` et `withdraw()`
+- Utiliser `.strip().lower()` sur les entrées pour fiabiliser les commandes
+- Messages utilisateur clairs et pédagogiques
+
+### 🧪 Exemple d’utilisation
+
+```bash
+$ python checkbook.py
+What would you like to do? (deposit, withdraw, balance, exit): deposit
+Enter the amount to deposit: $50
+Deposited $50.00
+Current Balance: $50.00
+```
+
+---
+
+
+
 
