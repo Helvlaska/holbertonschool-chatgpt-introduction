@@ -159,6 +159,38 @@ Current Balance: $50.00
 
 ---
 
+## 📁 Script 7 : `tic_tac_toe.py`
 
+### 🔍 Problème initial
 
+Ce jeu de morpion fonctionnait, mais plusieurs bugs ou oublis de logique nuisaient à son bon déroulement :
+- Le joueur déclaré vainqueur n’était pas le bon (affiché après changement de tour)
+- Aucune détection d’égalité lorsque le plateau était rempli
+- Aucune gestion d’erreur sur les entrées utilisateur (texte, nombres hors plage)
+- Affichage du plateau peu lisible
 
+### ✅ Corrections apportées
+
+- Réécriture de `check_winner()` pour retourner le vrai gagnant
+- Ajout de la fonction `is_full()` pour détecter une égalité
+- Protection des saisies utilisateur avec `try/except` et vérification de plage
+- Amélioration de l’affichage avec des indices de ligne et colonne
+
+### 🧪 Exemple d’utilisation
+
+```bash
+$ python tic_tac_toe.py
+  0   1   2
+0   |   |  
+  ---------
+1   |   |  
+  ---------
+2   |   |  
+
+Enter row (0, 1, or 2) for player X: 1
+Enter column (0, 1, or 2) for player X: 1
+...
+Player X wins!
+```
+
+---
